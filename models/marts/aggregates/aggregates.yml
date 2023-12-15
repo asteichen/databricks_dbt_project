@@ -18,4 +18,4 @@ models:
       - name: order_month
         description: the month the order was placed
         tests:
-          - unique
+          - not_null

@@ -5,11 +5,11 @@ def model(dbt, session):
     dbt.config(materialized="table",
         submission_method="all_purpose_cluster",
         create_notebook=True,
-        cluster_id="0830-163228-q22s4sv5",
+        cluster_id="0426-154059-dox4kjfg",
         enabled=False
     )
 
-    notebook = 'linked_notebook_test'
+    notebook = '/Shared/dbt_python_model/external_storage/example/linked_notebook_test'
 
     dbutils.notebook.run(notebook, 600)
   
