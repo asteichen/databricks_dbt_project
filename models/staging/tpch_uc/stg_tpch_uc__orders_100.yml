@@ -1,0 +1,24 @@
+models:
+  - name: stg_tpch_uc__orders_100
+    description: This model extracts and renames fields from the tpch_uc orders_100 source table. It serves as a staging model to prepare the data for further transformations and analysis.
+    columns:
+      - name: o_orderkey
+        description: Unique identifier for each order.
+      - name: o_custkey
+        description: Unique identifier for the customer who placed the order.
+      - name: o_orderstatus
+        description: Current status of the order.
+      - name: o_totalprice
+        description: Total price of the order.
+      - name: o_orderdate
+        description: Date when the order was placed.
+      - name: o_orderpriority
+        description: Priority level of the order.
+      - name: o_clerk
+        description: Identifier of the clerk who handled the order.
+      - name: o_shippriority
+        description: Priority for shipping the order.
+      - name: o_comment
+        description: Additional comments or notes about the order.
+      - name: loaded_at
+        description: Timestamp indicating when the data was loaded into the system.
